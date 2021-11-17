@@ -51,6 +51,10 @@ Create a new topic
 kafka-topics.sh --bootstrap-server broker:9092 --create --topic country-topic --partitions 1 --replication-factor 1
 ```
 
+```sh
+kafka-topics.sh --bootstrap-server broker:9092 --create --topic purchase-topic --partitions 1 --replication-factor 1
+```
+
 Produce a GraphQL Event to the Broker
 
 ```sh
@@ -67,7 +71,48 @@ Run a series of 50 "Country Events" into Kafka (Any record can be selected, incl
 kafka-producer-perf-test.sh \
 --topic country-topic \
 --throughput 1 \
---num-records 50 \
+--num-records 30 \
 --payload-file /tmp/all_countries.data \
 --producer-props acks=all bootstrap.servers=localhost:9092
+```
+
+```sh
+kafka-producer-perf-test.sh --topic country-topic --throughput 1 --num-records 30 --payload-file /tmp/all_countries.data --producer-props acks=all bootstrap.servers=localhost:9092
+```
+
+```sh
+kafka-producer-perf-test.sh \
+--topic purchase-topic \
+--throughput 1 \
+--num-records 30 \
+--payload-file /tmp/all_purchases.data \
+--producer-props acks=all bootstrap.servers=localhost:9092
+```
+
+```sh
+kafka-producer-perf-test.sh --topic purchase-topic --throughput 1 --num-records 30 --payload-file /tmp/all_purchases.data --producer-props acks=all bootstrap.servers=localhost:9092
+```
+
+## Generating the Data
+
+Visit [https://www.json-generator.com/](https://www.json-generator.com/)
+
+For the purchases you can use the following code
+
+```text
+[
+  '{{repeat(250)}}',
+  {
+    cost: '{{floating(100, 4000, 2, 0.00)}}',
+    category: function (tags) {
+      var technology = ['Clothing', 'DIY', 'Food', 'Personal Care', 'Electronics', 'Furniture', 'Outdoor', 'Toys', 'Media', 'Travel'];
+      return technology[tags.integer(0, technology.length - 1)];
+    },
+    country: function (tags) {
+      var countries = ['United Kingdom', 'Colombia', 'Japan', 'Australia', 'Denmark', 'India', 'China', 'United States', 'Brazil', 'South Africa'];
+      return countries[tags.integer(0, countries.length - 1)];
+    },
+    reference: '{{guid()}}'
+  }
+]
 ```

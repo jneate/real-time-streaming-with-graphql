@@ -9,9 +9,16 @@ export const typeDefs = `
     population: Int
     cca3: String
   }
+
+  type Purchase {
+    country: String
+    category: String
+    cost: Float
+    reference: String
+  }
   
-  "The subscription type to receive events"
   type Subscription {
     fetchCountries: Country
+    fetchPurchases: Purchase
   }
 `;

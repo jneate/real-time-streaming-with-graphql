@@ -1,0 +1,250 @@
+{ "fetchPurchases": {    "cost": 1374.78,    "category": "Personal Care",    "country": "Denmark",    "reference": "49171c69-1bcc-49f4-a9ba-d9e472e000cc"  } }
+{ "fetchPurchases": {    "cost": 3935.61,    "category": "Furniture",    "country": "United Kingdom",    "reference": "18e9e434-da10-4f7b-b5fc-b8f364252830"  } }
+{ "fetchPurchases": {    "cost": 3279.86,    "category": "Outdoor",    "country": "China",    "reference": "5ff62df8-c622-4339-a467-8a352cebfd3c"  } }
+{ "fetchPurchases": {    "cost": 1104.46,    "category": "Electronics",    "country": "South Africa",    "reference": "36624948-1cd8-4a9a-86ac-0b44576d0e63"  } }
+{ "fetchPurchases": {    "cost": 2204.08,    "category": "Personal Care",    "country": "China",    "reference": "932ca7ed-223c-4e16-988c-246ca4c59a00"  } }
+{ "fetchPurchases": {    "cost": 1360.19,    "category": "Furniture",    "country": "South Africa",    "reference": "a3e4ca91-3dc5-4100-8c68-557a043278fe"  } }
+{ "fetchPurchases": {    "cost": 1053.97,    "category": "Toys",    "country": "United Kingdom",    "reference": "867053f7-b7fb-4e25-b0c3-b07566a65840"  } }
+{ "fetchPurchases": {    "cost": 3317.43,    "category": "Electronics",    "country": "South Africa",    "reference": "838d256c-36b4-48e2-9675-969a0ebace7c"  } }
+{ "fetchPurchases": {    "cost": 1410.72,    "category": "Clothing",    "country": "India",    "reference": "da021fe4-51c2-44d3-9546-8583e10088af"  } }
+{ "fetchPurchases": {    "cost": 555.75,    "category": "Personal Care",    "country": "United States",    "reference": "8603dfae-7257-4d71-a47f-489c57f66957"  } }
+{ "fetchPurchases": {    "cost": 2774.94,    "category": "Media",    "country": "South Africa",    "reference": "3cab9933-120d-47ff-b096-bfae8f1f383e"  } }
+{ "fetchPurchases": {    "cost": 1657.09,    "category": "Clothing",    "country": "Japan",    "reference": "104e23eb-356e-473e-b0c4-cbb4418f0084"  } }
+{ "fetchPurchases": {    "cost": 3617.08,    "category": "Clothing",    "country": "United States",    "reference": "345d549b-2805-42b2-9e9a-34bc54e9f98c"  } }
+{ "fetchPurchases": {    "cost": 411.32,    "category": "Toys",    "country": "India",    "reference": "dbd525bb-5000-4079-9b19-35a195227916"  } }
+{ "fetchPurchases": {    "cost": 411.63,    "category": "Clothing",    "country": "Brazil",    "reference": "b934b108-bece-4563-b72e-0811ccbfcced"  } }
+{ "fetchPurchases": {    "cost": 2160.1,    "category": "Food",    "country": "Brazil",    "reference": "ee39f8a3-41fb-4e19-8524-4c89ec9dbf65"  } }
+{ "fetchPurchases": {    "cost": 2743.32,    "category": "Food",    "country": "South Africa",    "reference": "6f9d4d91-2056-489f-8ab5-2279b20ac5e8"  } }
+{ "fetchPurchases": {    "cost": 1915.76,    "category": "Food",    "country": "Colombia",    "reference": "0e3d9718-8c44-4528-83af-28954b66c605"  } }
+{ "fetchPurchases": {    "cost": 2952.35,    "category": "Electronics",    "country": "India",    "reference": "218ce198-a47b-4b0a-a2a8-979645cf1fd7"  } }
+{ "fetchPurchases": {    "cost": 470.82,    "category": "DIY",    "country": "Australia",    "reference": "1ce9b336-3864-4d7f-9d10-f91b49ad2740"  } }
+{ "fetchPurchases": {    "cost": 342.56,    "category": "Outdoor",    "country": "Colombia",    "reference": "2f28d422-4248-4a1a-b153-79a9864add56"  } }
+{ "fetchPurchases": {    "cost": 3928.71,    "category": "Electronics",    "country": "South Africa",    "reference": "a00532c2-a65e-4090-aea2-c529876956c6"  } }
+{ "fetchPurchases": {    "cost": 2003.34,    "category": "Media",    "country": "India",    "reference": "498494ed-2316-4561-8e51-991fd6f4c62a"  } }
+{ "fetchPurchases": {    "cost": 3562.81,    "category": "Electronics",    "country": "China",    "reference": "3a158715-1a6c-498f-9452-3ebe71ea2d52"  } }
+{ "fetchPurchases": {    "cost": 3388.31,    "category": "Personal Care",    "country": "Brazil",    "reference": "222f7826-a6ef-4d87-ba83-6353769c5459"  } }
+{ "fetchPurchases": {    "cost": 3591.15,    "category": "Electronics",    "country": "Denmark",    "reference": "80b1e2cb-7c14-4477-aff6-601388f9244e"  } }
+{ "fetchPurchases": {    "cost": 3263.65,    "category": "Food",    "country": "United Kingdom",    "reference": "f6b76b81-a6d4-466c-a858-74c775812b43"  } }
+{ "fetchPurchases": {    "cost": 2493.68,    "category": "Electronics",    "country": "India",    "reference": "2da096dc-dd31-4321-949f-e4fcf6bef73c"  } }
+{ "fetchPurchases": {    "cost": 3157.77,    "category": "Furniture",    "country": "Denmark",    "reference": "550b4177-f285-4d13-a038-95aea94f69fc"  } }
+{ "fetchPurchases": {    "cost": 327.42,    "category": "Furniture",    "country": "Brazil",    "reference": "14cad7b6-8f7c-444d-bd40-8b9c623153aa"  } }
+{ "fetchPurchases": {    "cost": 955.96,    "category": "Furniture",    "country": "Colombia",    "reference": "e9097617-bb17-4f56-8b44-8539d181cc02"  } }
+{ "fetchPurchases": {    "cost": 1016.38,    "category": "Clothing",    "country": "Colombia",    "reference": "64705ef4-4cf7-434e-8a0d-2ea024094f16"  } }
+{ "fetchPurchases": {    "cost": 240.45,    "category": "DIY",    "country": "United States",    "reference": "2ca14a9d-1881-4199-b405-7b48a30ac6e9"  } }
+{ "fetchPurchases": {    "cost": 2426.79,    "category": "Personal Care",    "country": "Brazil",    "reference": "3c74305f-0c8e-4134-921c-306b5bb204e4"  } }
+{ "fetchPurchases": {    "cost": 1431.95,    "category": "Outdoor",    "country": "South Africa",    "reference": "b0366bda-bd95-4d7f-bb9c-a0f08cb269df"  } }
+{ "fetchPurchases": {    "cost": 277.68,    "category": "Electronics",    "country": "United States",    "reference": "5d12017f-043b-415f-a858-36297f78e8aa"  } }
+{ "fetchPurchases": {    "cost": 3032.57,    "category": "Personal Care",    "country": "South Africa",    "reference": "d8b99af3-f256-4642-bd9c-9c06a7cfaa25"  } }
+{ "fetchPurchases": {    "cost": 2952.96,    "category": "Clothing",    "country": "China",    "reference": "930798d1-4523-46a4-9ef3-63836a540518"  } }
+{ "fetchPurchases": {    "cost": 3837.37,    "category": "Travel",    "country": "Brazil",    "reference": "7652ce28-e15f-4bce-a997-e6285c793f2c"  } }
+{ "fetchPurchases": {    "cost": 2548.94,    "category": "Electronics",    "country": "Australia",    "reference": "ddba87a6-e5d7-4bb2-ab9d-0bd19c3594ec"  } }
+{ "fetchPurchases": {    "cost": 1224.21,    "category": "Toys",    "country": "South Africa",    "reference": "87682938-43a4-43a1-b118-63a5b6f3d360"  } }
+{ "fetchPurchases": {    "cost": 2073.68,    "category": "Furniture",    "country": "Australia",    "reference": "6c85582b-c0a2-4807-a05a-6fa416ae4a2b"  } }
+{ "fetchPurchases": {    "cost": 558.64,    "category": "Toys",    "country": "India",    "reference": "757a8b17-9b75-4fd3-8668-1b85b9218857"  } }
+{ "fetchPurchases": {    "cost": 3645.5,    "category": "Furniture",    "country": "United Kingdom",    "reference": "1655975b-4b70-44f3-8cc4-9b34be91bf66"  } }
+{ "fetchPurchases": {    "cost": 3846.02,    "category": "DIY",    "country": "Colombia",    "reference": "c20c243c-6c1b-4804-83cc-652681b9eef7"  } }
+{ "fetchPurchases": {    "cost": 3425.37,    "category": "Travel",    "country": "Denmark",    "reference": "40c929fe-335e-4126-9a51-3d91625f20bc"  } }
+{ "fetchPurchases": {    "cost": 557.43,    "category": "Food",    "country": "India",    "reference": "93f92fdc-5995-4738-9a16-f21ab8b60da2"  } }
+{ "fetchPurchases": {    "cost": 1992.78,    "category": "Travel",    "country": "Brazil",    "reference": "75390d7d-1cf2-4cf0-a524-a2a64fea83f0"  } }
+{ "fetchPurchases": {    "cost": 2012.39,    "category": "Toys",    "country": "Denmark",    "reference": "0af99ca8-c106-41fb-a41a-5efa1547efa9"  } }
+{ "fetchPurchases": {    "cost": 3125.5,    "category": "Furniture",    "country": "China",    "reference": "cf5aa5c1-6932-410c-8803-21a3231b3110"  } }
+{ "fetchPurchases": {    "cost": 465.19,    "category": "Toys",    "country": "India",    "reference": "692cd1e8-95c5-43b2-8faa-32bae3f9eacd"  } }
+{ "fetchPurchases": {    "cost": 2018.32,    "category": "Personal Care",    "country": "United States",    "reference": "42a1542e-87c7-49fc-8232-b9066438e8cf"  } }
+{ "fetchPurchases": {    "cost": 2315.64,    "category": "Travel",    "country": "United States",    "reference": "699654d9-f63a-4edb-ada4-8adb9806bb60"  } }
+{ "fetchPurchases": {    "cost": 1096.9,    "category": "Outdoor",    "country": "United States",    "reference": "b6f5e0a4-243d-4949-921f-3ee6d46ea66a"  } }
+{ "fetchPurchases": {    "cost": 3730.02,    "category": "Personal Care",    "country": "Australia",    "reference": "17b0aaff-d161-4332-bb19-19a4b2d6c061"  } }
+{ "fetchPurchases": {    "cost": 1252.27,    "category": "Personal Care",    "country": "United States",    "reference": "43f6d45b-af42-472d-bf45-da6691f4bc73"  } }
+{ "fetchPurchases": {    "cost": 1093.35,    "category": "DIY",    "country": "Denmark",    "reference": "ba79dd92-b09c-4d59-8033-af17169f266f"  } }
+{ "fetchPurchases": {    "cost": 599.59,    "category": "Outdoor",    "country": "United States",    "reference": "b503fbd9-7b01-4d3f-a8bc-e47f643480fe"  } }
+{ "fetchPurchases": {    "cost": 200.56,    "category": "Outdoor",    "country": "United States",    "reference": "e3981f80-58ae-48c1-b851-6804ac3ba835"  } }
+{ "fetchPurchases": {    "cost": 3543.46,    "category": "DIY",    "country": "Colombia",    "reference": "4a51f82d-1118-4416-a0c8-b0bac15daa1e"  } }
+{ "fetchPurchases": {    "cost": 2883.83,    "category": "Food",    "country": "United States",    "reference": "36c9c261-6705-42ba-abaf-2ce6b9bf31ad"  } }
+{ "fetchPurchases": {    "cost": 1256.75,    "category": "Media",    "country": "United States",    "reference": "78239939-ca0a-4afc-9c5b-9967315a8d4d"  } }
+{ "fetchPurchases": {    "cost": 1154.3,    "category": "Personal Care",    "country": "South Africa",    "reference": "7c0e0770-3cc2-4959-b7ec-f0cd5e6b97cc"  } }
+{ "fetchPurchases": {    "cost": 361.83,    "category": "Clothing",    "country": "United Kingdom",    "reference": "6b1a2e16-4ac3-473b-8f47-0a41b591b3c1"  } }
+{ "fetchPurchases": {    "cost": 1047.28,    "category": "Clothing",    "country": "South Africa",    "reference": "4aab5fc4-b128-4e9a-8ea0-5e66cf78eecb"  } }
+{ "fetchPurchases": {    "cost": 3957.06,    "category": "Outdoor",    "country": "Japan",    "reference": "1949ca69-4add-47b5-925d-c7c6084cbc67"  } }
+{ "fetchPurchases": {    "cost": 2923.83,    "category": "Travel",    "country": "Brazil",    "reference": "73b01147-edde-475d-ade2-ed47e34d55b2"  } }
+{ "fetchPurchases": {    "cost": 2508.76,    "category": "Toys",    "country": "India",    "reference": "01d21be9-c377-4377-9144-ba8968cc5ff3"  } }
+{ "fetchPurchases": {    "cost": 1523.57,    "category": "Electronics",    "country": "Japan",    "reference": "c119f18c-5f5d-44c5-a089-999d2647bea4"  } }
+{ "fetchPurchases": {    "cost": 2602.04,    "category": "Food",    "country": "Colombia",    "reference": "6ff82210-2ab2-4472-99a8-5e78ef77dde2"  } }
+{ "fetchPurchases": {    "cost": 866.08,    "category": "DIY",    "country": "Australia",    "reference": "a8f5a806-f33c-4292-8899-b08e9d266e6e"  } }
+{ "fetchPurchases": {    "cost": 1003.97,    "category": "Toys",    "country": "China",    "reference": "be896446-fa5e-42bd-b478-131f8f327e12"  } }
+{ "fetchPurchases": {    "cost": 996.07,    "category": "Toys",    "country": "South Africa",    "reference": "38862a31-0196-4929-aaaa-6c3ce6d09e1e"  } }
+{ "fetchPurchases": {    "cost": 2534.23,    "category": "Outdoor",    "country": "Denmark",    "reference": "b944fb88-279b-4bb5-8055-a240d8e41efe"  } }
+{ "fetchPurchases": {    "cost": 958.46,    "category": "Outdoor",    "country": "United States",    "reference": "8a9626e9-f3c0-4ef9-98cc-1f7f5fc877a1"  } }
+{ "fetchPurchases": {    "cost": 1302,    "category": "Clothing",    "country": "Denmark",    "reference": "25fd5096-5c0c-4b97-8a82-16cd915bb1c8"  } }
+{ "fetchPurchases": {    "cost": 3616.03,    "category": "DIY",    "country": "Brazil",    "reference": "e3166a92-8938-4144-a9d0-978509d7a30b"  } }
+{ "fetchPurchases": {    "cost": 1210.33,    "category": "Personal Care",    "country": "Brazil",    "reference": "0a93db9b-32c7-4c98-9746-1e4fac2fdb88"  } }
+{ "fetchPurchases": {    "cost": 2471.08,    "category": "Food",    "country": "China",    "reference": "7d336bb0-1f11-45b5-bc4b-faca108480ff"  } }
+{ "fetchPurchases": {    "cost": 3810.54,    "category": "Personal Care",    "country": "Japan",    "reference": "1fc66d29-21da-4c02-8993-bfcd46a0eef8"  } }
+{ "fetchPurchases": {    "cost": 2313.13,    "category": "Personal Care",    "country": "Brazil",    "reference": "ec3dc751-e59a-454a-8cae-70f7f379624d"  } }
+{ "fetchPurchases": {    "cost": 1764.04,    "category": "Food",    "country": "India",    "reference": "ac98e11d-1b71-4493-8a15-40a209060c87"  } }
+{ "fetchPurchases": {    "cost": 2002.82,    "category": "Clothing",    "country": "Australia",    "reference": "42d3926f-23db-4e2a-8acf-f81304b6d1c0"  } }
+{ "fetchPurchases": {    "cost": 1127.55,    "category": "Furniture",    "country": "China",    "reference": "e1c122cf-7763-4655-8033-df629aa41ba4"  } }
+{ "fetchPurchases": {    "cost": 1613.18,    "category": "Electronics",    "country": "Japan",    "reference": "5a8b436e-0973-4a6a-b238-77b89be92cdd"  } }
+{ "fetchPurchases": {    "cost": 2704.92,    "category": "Electronics",    "country": "India",    "reference": "a2b75db0-2041-4396-921e-d884d3c26cbb"  } }
+{ "fetchPurchases": {    "cost": 1916.32,    "category": "Food",    "country": "Colombia",    "reference": "9fd9e5be-22d6-4f5b-96ac-548ad723625b"  } }
+{ "fetchPurchases": {    "cost": 2079.38,    "category": "Toys",    "country": "South Africa",    "reference": "ad618b55-a70d-4927-a468-bb86e6d6bfca"  } }
+{ "fetchPurchases": {    "cost": 776.34,    "category": "Toys",    "country": "Denmark",    "reference": "843437e9-bfb3-484f-889d-d4c292237b0e"  } }
+{ "fetchPurchases": {    "cost": 3298.55,    "category": "Toys",    "country": "Colombia",    "reference": "7034cd91-d35a-4b25-ab03-5ea52d07fa0a"  } }
+{ "fetchPurchases": {    "cost": 3132.78,    "category": "Media",    "country": "Colombia",    "reference": "0a0cf9d8-d95b-40a4-9f78-5d40a53be079"  } }
+{ "fetchPurchases": {    "cost": 596.58,    "category": "Furniture",    "country": "Brazil",    "reference": "3796b47c-c131-44a6-9892-b885f7facf97"  } }
+{ "fetchPurchases": {    "cost": 1467.33,    "category": "Food",    "country": "Brazil",    "reference": "50ad3d11-596c-4dec-8b51-af30cb7218c2"  } }
+{ "fetchPurchases": {    "cost": 2283.79,    "category": "Personal Care",    "country": "Colombia",    "reference": "dc7ed721-4752-48c8-8f5a-ec66d4e60bd3"  } }
+{ "fetchPurchases": {    "cost": 634.25,    "category": "Outdoor",    "country": "United Kingdom",    "reference": "846f0625-045a-45ae-9d11-ef6e79e75cd6"  } }
+{ "fetchPurchases": {    "cost": 1831.88,    "category": "Food",    "country": "India",    "reference": "d50ba47b-ba5b-445c-937a-e06490461d2a"  } }
+{ "fetchPurchases": {    "cost": 2657.52,    "category": "Outdoor",    "country": "Brazil",    "reference": "d6aa2d00-0efe-42dd-9d6e-650aee05a76a"  } }
+{ "fetchPurchases": {    "cost": 2938.36,    "category": "Travel",    "country": "South Africa",    "reference": "29d11a0b-8cbb-4a8c-a923-51e671600fac"  } }
+{ "fetchPurchases": {    "cost": 3333.25,    "category": "Toys",    "country": "Brazil",    "reference": "b329f209-e662-4ef1-a72a-db5c0aad2037"  } }
+{ "fetchPurchases": {    "cost": 3765.72,    "category": "Personal Care",    "country": "Australia",    "reference": "53673e24-158b-4d28-a01d-b9ca75914458"  } }
+{ "fetchPurchases": {    "cost": 1263.5,    "category": "Personal Care",    "country": "Brazil",    "reference": "a5e1d97e-c4ee-456c-b4bc-ef15e4c428b4"  } }
+{ "fetchPurchases": {    "cost": 3951.47,    "category": "Outdoor",    "country": "Japan",    "reference": "105c6eb4-12b3-4d72-a3ca-60589da4b236"  } }
+{ "fetchPurchases": {    "cost": 1842.29,    "category": "Food",    "country": "Australia",    "reference": "98cd2624-5a42-4750-aef1-acb25bb083cc"  } }
+{ "fetchPurchases": {    "cost": 811.81,    "category": "Electronics",    "country": "Colombia",    "reference": "ae7af699-8226-42dd-b426-622eeced59a0"  } }
+{ "fetchPurchases": {    "cost": 3824.52,    "category": "Personal Care",    "country": "United Kingdom",    "reference": "139ca06e-c4eb-41fe-a34b-8891118e1063"  } }
+{ "fetchPurchases": {    "cost": 3699.01,    "category": "Food",    "country": "Japan",    "reference": "da4e5752-5d19-4369-8128-b0c36927f118"  } }
+{ "fetchPurchases": {    "cost": 1101.43,    "category": "Travel",    "country": "China",    "reference": "28a56597-3f29-4bb9-9783-ae5d71d7119b"  } }
+{ "fetchPurchases": {    "cost": 1672.85,    "category": "Personal Care",    "country": "South Africa",    "reference": "7190d011-6c31-47b3-b849-2e005d2211a0"  } }
+{ "fetchPurchases": {    "cost": 289.7,    "category": "Clothing",    "country": "Japan",    "reference": "8ecfbf1e-5c26-4d21-bd0e-fb328dd79139"  } }
+{ "fetchPurchases": {    "cost": 1238.75,    "category": "Travel",    "country": "Denmark",    "reference": "76279d31-20ee-4943-b606-533365284cfd"  } }
+{ "fetchPurchases": {    "cost": 2125.46,    "category": "Travel",    "country": "Brazil",    "reference": "81f6606b-428c-4e97-8009-1b1162c11ef6"  } }
+{ "fetchPurchases": {    "cost": 439.61,    "category": "Media",    "country": "Colombia",    "reference": "5801733b-a241-4c69-83db-aebc0535807c"  } }
+{ "fetchPurchases": {    "cost": 1282.61,    "category": "Clothing",    "country": "China",    "reference": "0a924bb8-2f30-4fa0-9e82-9d64691e8fa3"  } }
+{ "fetchPurchases": {    "cost": 1398.89,    "category": "Furniture",    "country": "United Kingdom",    "reference": "6703b921-9f1f-49bc-bad0-a7f16b464373"  } }
+{ "fetchPurchases": {    "cost": 1916.49,    "category": "Toys",    "country": "Japan",    "reference": "594d5e16-efa8-4fb1-ab37-db7c1ea80504"  } }
+{ "fetchPurchases": {    "cost": 2510.87,    "category": "Toys",    "country": "Denmark",    "reference": "79de612a-3760-4abf-80c9-aa083e8c134e"  } }
+{ "fetchPurchases": {    "cost": 361.82,    "category": "Electronics",    "country": "India",    "reference": "110f71d2-37fa-48ab-a86c-2c2127d44872"  } }
+{ "fetchPurchases": {    "cost": 2457.48,    "category": "Personal Care",    "country": "Australia",    "reference": "98fc957e-866e-4523-895c-9a05cf299f63"  } }
+{ "fetchPurchases": {    "cost": 2082.56,    "category": "Personal Care",    "country": "South Africa",    "reference": "273d3f35-97d1-43df-874d-7b02787be7d4"  } }
+{ "fetchPurchases": {    "cost": 590.78,    "category": "Furniture",    "country": "Brazil",    "reference": "c10a1bef-c636-4904-b195-03f993463d3b"  } }
+{ "fetchPurchases": {    "cost": 1242.54,    "category": "Media",    "country": "India",    "reference": "36a3c689-f781-45cb-ada1-3c80703c7baf"  } }
+{ "fetchPurchases": {    "cost": 452.09,    "category": "Clothing",    "country": "Denmark",    "reference": "8c52a07d-2bac-48ae-869e-f7cf3b43223d"  } }
+{ "fetchPurchases": {    "cost": 2240.22,    "category": "Food",    "country": "United States",    "reference": "a0cba580-d740-4717-926c-7644c2ab541a"  } }
+{ "fetchPurchases": {    "cost": 1089.04,    "category": "Clothing",    "country": "Australia",    "reference": "fbd4d69b-e940-45ce-a7c3-a240d5d93f19"  } }
+{ "fetchPurchases": {    "cost": 562.02,    "category": "Food",    "country": "South Africa",    "reference": "44d8ab9d-a330-4a92-a5d9-7da63da694b8"  } }
+{ "fetchPurchases": {    "cost": 3497.71,    "category": "Personal Care",    "country": "United Kingdom",    "reference": "5de852e2-6066-4ba6-ad08-7ee60aafb64d"  } }
+{ "fetchPurchases": {    "cost": 2360.52,    "category": "Personal Care",    "country": "India",    "reference": "f624c8f6-dfe7-457f-bf02-161e7009d116"  } }
+{ "fetchPurchases": {    "cost": 362.74,    "category": "Electronics",    "country": "United Kingdom",    "reference": "e6a2004b-2503-47cd-af25-ef42f5ee628d"  } }
+{ "fetchPurchases": {    "cost": 1804.64,    "category": "Clothing",    "country": "Australia",    "reference": "aadb3b72-d5b1-49d6-bce6-e34839b293ba"  } }
+{ "fetchPurchases": {    "cost": 1628.43,    "category": "Travel",    "country": "China",    "reference": "2ab6c1f5-51c7-4214-ba41-cddbc2062ef4"  } }
+{ "fetchPurchases": {    "cost": 1681.5,    "category": "Clothing",    "country": "United States",    "reference": "37bce59b-48db-4e91-8e48-94e67d9c9eda"  } }
+{ "fetchPurchases": {    "cost": 3732.94,    "category": "Media",    "country": "Japan",    "reference": "d553baa6-fa8b-4adb-ac87-b275c8d1ea3a"  } }
+{ "fetchPurchases": {    "cost": 465.37,    "category": "Personal Care",    "country": "Colombia",    "reference": "c457cddb-57fd-4ec2-801c-a84e200fa39b"  } }
+{ "fetchPurchases": {    "cost": 235.18,    "category": "Travel",    "country": "India",    "reference": "b886f9c1-b63c-4a4b-a245-e27588687582"  } }
+{ "fetchPurchases": {    "cost": 540.06,    "category": "Food",    "country": "Australia",    "reference": "a113b593-30f4-4193-ac02-076a98534159"  } }
+{ "fetchPurchases": {    "cost": 3568.68,    "category": "Personal Care",    "country": "United Kingdom",    "reference": "cc2a505c-8df7-4767-96cd-35d68de675d2"  } }
+{ "fetchPurchases": {    "cost": 2860.68,    "category": "Outdoor",    "country": "China",    "reference": "e8772161-3526-4aa2-90b1-2e4cbdd9e827"  } }
+{ "fetchPurchases": {    "cost": 1796.26,    "category": "Furniture",    "country": "Australia",    "reference": "a70ef877-5825-4e58-803e-60a32f63d53f"  } }
+{ "fetchPurchases": {    "cost": 795.31,    "category": "Outdoor",    "country": "Brazil",    "reference": "113a997c-8f14-4d9a-a353-5174432de1be"  } }
+{ "fetchPurchases": {    "cost": 521.35,    "category": "Media",    "country": "Colombia",    "reference": "3c2e86e0-31f6-464d-aeb9-eebd2e9e6b4c"  } }
+{ "fetchPurchases": {    "cost": 942.42,    "category": "Personal Care",    "country": "Brazil",    "reference": "ebc61ea6-9156-4c9d-bd6d-a1e8e32a2694"  } }
+{ "fetchPurchases": {    "cost": 3979.62,    "category": "Toys",    "country": "Australia",    "reference": "1e41cf40-9dea-46dd-97a4-afb5c66e42aa"  } }
+{ "fetchPurchases": {    "cost": 573.36,    "category": "Furniture",    "country": "Brazil",    "reference": "b1d28ed4-762e-4cc2-8734-220aa3b5d0f8"  } }
+{ "fetchPurchases": {    "cost": 3205.22,    "category": "DIY",    "country": "Denmark",    "reference": "97bf7930-dd7f-4e46-87c5-cdfeea567b78"  } }
+{ "fetchPurchases": {    "cost": 728.95,    "category": "DIY",    "country": "United Kingdom",    "reference": "ad605df6-c05f-45d4-a344-04f56c94a162"  } }
+{ "fetchPurchases": {    "cost": 3150.91,    "category": "Media",    "country": "Australia",    "reference": "07b9d194-159e-49d6-8a2d-9eb175143521"  } }
+{ "fetchPurchases": {    "cost": 849.61,    "category": "Furniture",    "country": "United Kingdom",    "reference": "aba5a5dc-aca6-430f-9855-e89fe14b871f"  } }
+{ "fetchPurchases": {    "cost": 3659.22,    "category": "Food",    "country": "Brazil",    "reference": "c801264f-ff12-4f3d-9c5f-51db46ce894b"  } }
+{ "fetchPurchases": {    "cost": 2868.24,    "category": "DIY",    "country": "China",    "reference": "e9d0efc2-ebad-430b-9f25-0c45e5627a71"  } }
+{ "fetchPurchases": {    "cost": 2737.55,    "category": "DIY",    "country": "Japan",    "reference": "3919b581-231d-454a-b2ea-8a9c3e9a0349"  } }
+{ "fetchPurchases": {    "cost": 2547.01,    "category": "Travel",    "country": "United Kingdom",    "reference": "5d076e8b-0194-42e8-bd9c-a6b406e7dd37"  } }
+{ "fetchPurchases": {    "cost": 2155.97,    "category": "Food",    "country": "Japan",    "reference": "6eaac7a0-8dd4-454b-841b-40f988d5fe6a"  } }
+{ "fetchPurchases": {    "cost": 295.17,    "category": "Travel",    "country": "Australia",    "reference": "c217b954-c049-49d5-aad2-c1d168b2ddd3"  } }
+{ "fetchPurchases": {    "cost": 1036.97,    "category": "Electronics",    "country": "Colombia",    "reference": "d2daba5c-05e1-41f6-a244-4670dbb53f90"  } }
+{ "fetchPurchases": {    "cost": 3429.37,    "category": "Furniture",    "country": "Colombia",    "reference": "13a3e4ac-6833-401d-b83b-96b2f3aaf841"  } }
+{ "fetchPurchases": {    "cost": 3100.26,    "category": "Travel",    "country": "Japan",    "reference": "009091b4-eb19-4aa9-9a39-4f61a583bd13"  } }
+{ "fetchPurchases": {    "cost": 2521.57,    "category": "Food",    "country": "United Kingdom",    "reference": "530ba417-c21c-4e7a-9104-fd300e3be46d"  } }
+{ "fetchPurchases": {    "cost": 3388.75,    "category": "Media",    "country": "China",    "reference": "0b37ea09-889d-4a7e-9b37-52c547ac845a"  } }
+{ "fetchPurchases": {    "cost": 503.09,    "category": "Food",    "country": "United States",    "reference": "3fad0e1d-c13d-4f7c-b6b7-887fa8768eb5"  } }
+{ "fetchPurchases": {    "cost": 1646.46,    "category": "Travel",    "country": "Japan",    "reference": "177b4873-f73c-4a1e-b477-16ef9d1a1e84"  } }
+{ "fetchPurchases": {    "cost": 3390.85,    "category": "Electronics",    "country": "Australia",    "reference": "2a084a1d-7fb3-4204-abc5-b35b277e4297"  } }
+{ "fetchPurchases": {    "cost": 429.83,    "category": "Outdoor",    "country": "United Kingdom",    "reference": "125fdc3d-6459-40c7-bb60-ed4d38d2f5e3"  } }
+{ "fetchPurchases": {    "cost": 1626.95,    "category": "Clothing",    "country": "Brazil",    "reference": "adc55b78-a00d-4349-adb8-cd6d63777677"  } }
+{ "fetchPurchases": {    "cost": 3461.19,    "category": "Outdoor",    "country": "Colombia",    "reference": "5f979e2e-c141-4058-9445-d56e48392b71"  } }
+{ "fetchPurchases": {    "cost": 815.27,    "category": "Travel",    "country": "Denmark",    "reference": "424121be-9719-4268-ae22-2f1bcef7779d"  } }
+{ "fetchPurchases": {    "cost": 801.83,    "category": "Toys",    "country": "India",    "reference": "e5f8f69d-2920-457f-84df-e6ff14278a8f"  } }
+{ "fetchPurchases": {    "cost": 348.79,    "category": "Outdoor",    "country": "United States",    "reference": "61555f3a-8e86-4253-8f21-c50fae0a657f"  } }
+{ "fetchPurchases": {    "cost": 2220.36,    "category": "DIY",    "country": "India",    "reference": "a24ca5d8-3d25-452f-b8ea-e1ee4c1ea696"  } }
+{ "fetchPurchases": {    "cost": 3158.41,    "category": "Clothing",    "country": "United States",    "reference": "e5530426-9213-4df5-80f5-f9baf7e2d1d6"  } }
+{ "fetchPurchases": {    "cost": 1151.42,    "category": "Personal Care",    "country": "South Africa",    "reference": "b68daa94-87c1-49d4-8122-4e8b3ce02bb4"  } }
+{ "fetchPurchases": {    "cost": 623.05,    "category": "Furniture",    "country": "United Kingdom",    "reference": "92b6c574-1689-4624-9ea6-feb34a3bd2dc"  } }
+{ "fetchPurchases": {    "cost": 1941.21,    "category": "DIY",    "country": "South Africa",    "reference": "90b29d96-ecb3-4d7d-a976-cd727e45b920"  } }
+{ "fetchPurchases": {    "cost": 477.89,    "category": "DIY",    "country": "South Africa",    "reference": "1584b129-732e-4be7-9b63-8ba12191cfe3"  } }
+{ "fetchPurchases": {    "cost": 313.23,    "category": "Furniture",    "country": "United States",    "reference": "3450b9f0-6402-41e5-a1d4-578c1c61bbe8"  } }
+{ "fetchPurchases": {    "cost": 2126.03,    "category": "Toys",    "country": "United Kingdom",    "reference": "106e14a9-5010-46c3-a5f5-85fc33b767a5"  } }
+{ "fetchPurchases": {    "cost": 1798.97,    "category": "Travel",    "country": "China",    "reference": "0975214c-4bf8-4235-a4d2-48556059f6cc"  } }
+{ "fetchPurchases": {    "cost": 3526.76,    "category": "Food",    "country": "United Kingdom",    "reference": "78cf91d0-e9ad-425f-8746-95846db4de52"  } }
+{ "fetchPurchases": {    "cost": 2843.99,    "category": "Travel",    "country": "South Africa",    "reference": "844e936f-8045-4ff9-a774-afb5e13245ac"  } }
+{ "fetchPurchases": {    "cost": 1588.92,    "category": "Travel",    "country": "Australia",    "reference": "1c001c1e-516d-49dd-94f0-15b3c541cf40"  } }
+{ "fetchPurchases": {    "cost": 2915.43,    "category": "Travel",    "country": "United States",    "reference": "42b07da1-7c65-493d-9486-60e4d63d91ed"  } }
+{ "fetchPurchases": {    "cost": 2092.64,    "category": "Outdoor",    "country": "United States",    "reference": "08fb63c3-383d-493c-829f-23b0166e4a16"  } }
+{ "fetchPurchases": {    "cost": 2171.7,    "category": "Toys",    "country": "Colombia",    "reference": "c8f0f189-828a-44ca-a295-ed5ecdf3d061"  } }
+{ "fetchPurchases": {    "cost": 172.85,    "category": "Clothing",    "country": "Brazil",    "reference": "ab99309c-d933-4d6d-aa37-5b91a89647b1"  } }
+{ "fetchPurchases": {    "cost": 1811.67,    "category": "Food",    "country": "United Kingdom",    "reference": "f8cb554b-2a6d-41db-be58-cb934931556f"  } }
+{ "fetchPurchases": {    "cost": 2161.44,    "category": "Outdoor",    "country": "Brazil",    "reference": "4c2de993-e11e-40e3-bfa7-f93e25d3d309"  } }
+{ "fetchPurchases": {    "cost": 196.39,    "category": "Personal Care",    "country": "United Kingdom",    "reference": "8d98c739-0c23-40c3-a63d-967b347ce326"  } }
+{ "fetchPurchases": {    "cost": 1852.21,    "category": "Electronics",    "country": "United States",    "reference": "86c4b452-586f-47e3-a5b4-d398fbb9bfbf"  } }
+{ "fetchPurchases": {    "cost": 1845.97,    "category": "Food",    "country": "India",    "reference": "489d9fdf-a762-4d87-bddc-f53c07de84d0"  } }
+{ "fetchPurchases": {    "cost": 2582.04,    "category": "Clothing",    "country": "India",    "reference": "1f88c971-ed90-4e02-b512-4ae432e25f10"  } }
+{ "fetchPurchases": {    "cost": 1573.42,    "category": "Clothing",    "country": "India",    "reference": "6adb5b20-55f8-4325-af8f-ce8476d79fc0"  } }
+{ "fetchPurchases": {    "cost": 1478.82,    "category": "Outdoor",    "country": "Colombia",    "reference": "9f33219b-f7ba-4149-9a75-57d41ce73de0"  } }
+{ "fetchPurchases": {    "cost": 124.59,    "category": "Furniture",    "country": "Australia",    "reference": "dfc6fb47-68b6-4eb8-a19c-1aa2a789ab81"  } }
+{ "fetchPurchases": {    "cost": 1888.69,    "category": "Toys",    "country": "Colombia",    "reference": "a0af4ea0-ca52-420e-a94e-41b22e0ad165"  } }
+{ "fetchPurchases": {    "cost": 235.16,    "category": "Outdoor",    "country": "Japan",    "reference": "65a94390-20af-4dc3-8f86-bd52116d2315"  } }
+{ "fetchPurchases": {    "cost": 1956.52,    "category": "Toys",    "country": "South Africa",    "reference": "fba73161-e49b-4ac0-905c-a3df47533128"  } }
+{ "fetchPurchases": {    "cost": 1931.64,    "category": "Travel",    "country": "Brazil",    "reference": "58e73b17-847f-495f-a457-788e77972f96"  } }
+{ "fetchPurchases": {    "cost": 3154.23,    "category": "Personal Care",    "country": "Denmark",    "reference": "d85e3bb3-1adc-4915-98d8-16db7af2552d"  } }
+{ "fetchPurchases": {    "cost": 1007.96,    "category": "Furniture",    "country": "Japan",    "reference": "0d3315eb-bdb3-49e8-8db5-4ed50d06403b"  } }
+{ "fetchPurchases": {    "cost": 578.18,    "category": "DIY",    "country": "India",    "reference": "4bfd584c-8247-46d7-809c-0b413569f819"  } }
+{ "fetchPurchases": {    "cost": 374.93,    "category": "Personal Care",    "country": "United States",    "reference": "7f5e43fc-4f0d-408b-958d-490735ad6a37"  } }
+{ "fetchPurchases": {    "cost": 3458.08,    "category": "Food",    "country": "Denmark",    "reference": "9891de16-2dbb-4467-bf67-2ec15af7b18a"  } }
+{ "fetchPurchases": {    "cost": 3678.32,    "category": "Personal Care",    "country": "Denmark",    "reference": "c0a3e5a2-eded-4f3f-b51d-f48a5e867df3"  } }
+{ "fetchPurchases": {    "cost": 1299.9,    "category": "Media",    "country": "Japan",    "reference": "fddf9150-82ce-4195-84ea-6f44c7a14fcd"  } }
+{ "fetchPurchases": {    "cost": 1809.64,    "category": "Personal Care",    "country": "United Kingdom",    "reference": "2d5e79dd-33d8-4906-9b20-5635ce7b38d2"  } }
+{ "fetchPurchases": {    "cost": 3496.53,    "category": "Personal Care",    "country": "United Kingdom",    "reference": "26770b20-8d91-4b86-a423-e97467d7b13e"  } }
+{ "fetchPurchases": {    "cost": 1665.09,    "category": "Personal Care",    "country": "Colombia",    "reference": "f7dbcae8-0d0f-4d14-a1b0-512518b9bc8e"  } }
+{ "fetchPurchases": {    "cost": 1558.3,    "category": "Travel",    "country": "Japan",    "reference": "7b2263be-237d-4654-8be3-e803ea98d073"  } }
+{ "fetchPurchases": {    "cost": 1976.72,    "category": "DIY",    "country": "Colombia",    "reference": "9c4d7ae4-db27-46c2-bd22-b57c54997000"  } }
+{ "fetchPurchases": {    "cost": 2637.29,    "category": "Electronics",    "country": "Brazil",    "reference": "79e32fe6-d834-4db3-bc35-ab4ffe57f820"  } }
+{ "fetchPurchases": {    "cost": 1169.06,    "category": "Food",    "country": "Australia",    "reference": "9f95a028-3b70-4a69-8282-3cf6545096a8"  } }
+{ "fetchPurchases": {    "cost": 1519.33,    "category": "Clothing",    "country": "China",    "reference": "4fc38db1-2481-424e-b5fa-c1ad4f2790dd"  } }
+{ "fetchPurchases": {    "cost": 1325.44,    "category": "Personal Care",    "country": "United States",    "reference": "be5ee043-5217-459a-bcde-2bee07890be7"  } }
+{ "fetchPurchases": {    "cost": 455.25,    "category": "Media",    "country": "Australia",    "reference": "4021e645-ac48-41bd-ac4f-680b64ad4279"  } }
+{ "fetchPurchases": {    "cost": 3690.82,    "category": "Electronics",    "country": "Australia",    "reference": "b0bf1c26-88e1-419d-97e5-a61bebdfa90b"  } }
+{ "fetchPurchases": {    "cost": 3746.03,    "category": "Personal Care",    "country": "Brazil",    "reference": "de40d420-f7cb-4bfe-9246-a8b6f711ad3a"  } }
+{ "fetchPurchases": {    "cost": 1615.92,    "category": "Personal Care",    "country": "Japan",    "reference": "09ae94a6-705f-45c3-9ab2-7d2f5907a789"  } }
+{ "fetchPurchases": {    "cost": 3394.08,    "category": "Furniture",    "country": "India",    "reference": "669741bf-48ef-4bda-b2cc-b017b9570cd1"  } }
+{ "fetchPurchases": {    "cost": 1572.46,    "category": "Travel",    "country": "China",    "reference": "81567343-a7ae-4852-975a-18c31b9f2ba4"  } }
+{ "fetchPurchases": {    "cost": 2829.12,    "category": "Travel",    "country": "India",    "reference": "c588be48-17f5-453f-907b-9eee292db972"  } }
+{ "fetchPurchases": {    "cost": 113.05,    "category": "Personal Care",    "country": "United States",    "reference": "7788efb7-3e42-4fcc-8750-122b4ed87ee1"  } }
+{ "fetchPurchases": {    "cost": 2611.08,    "category": "Personal Care",    "country": "Brazil",    "reference": "5643a83a-a12b-429f-9cfa-9ff643a72ffd"  } }
+{ "fetchPurchases": {    "cost": 3498.82,    "category": "Clothing",    "country": "United Kingdom",    "reference": "4bd41d4f-935e-4aa5-b287-ae0e0b8d596c"  } }
+{ "fetchPurchases": {    "cost": 2772.37,    "category": "Outdoor",    "country": "Japan",    "reference": "97c9ceab-a8c5-4031-b5b2-3494753b997f"  } }
+{ "fetchPurchases": {    "cost": 1915.77,    "category": "Outdoor",    "country": "Colombia",    "reference": "1df46ec9-b95a-421c-97f1-e84769b3214c"  } }
+{ "fetchPurchases": {    "cost": 3874.58,    "category": "Clothing",    "country": "Colombia",    "reference": "074f2403-4fd8-46ea-b348-c91c3064cd7f"  } }
+{ "fetchPurchases": {    "cost": 3267.81,    "category": "Travel",    "country": "United Kingdom",    "reference": "ea39c339-da35-481a-85b1-a3886f4af259"  } }
+{ "fetchPurchases": {    "cost": 217.85,    "category": "DIY",    "country": "India",    "reference": "3a264b42-ad44-482e-9cf8-49c45db9dcf4"  } }
+{ "fetchPurchases": {    "cost": 695.27,    "category": "Food",    "country": "Denmark",    "reference": "b46b305d-20a0-4075-9dae-433110cfff09"  } }
+{ "fetchPurchases": {    "cost": 1645.76,    "category": "Media",    "country": "Colombia",    "reference": "bae1c610-eb88-43ec-9004-d430589a2bfd"  } }
+{ "fetchPurchases": {    "cost": 3939.57,    "category": "DIY",    "country": "South Africa",    "reference": "bbaa7f3e-b6f3-433d-9c33-5196ff7a9e9a"  } }
+{ "fetchPurchases": {    "cost": 2161.34,    "category": "Clothing",    "country": "India",    "reference": "02d5c695-c907-4597-969d-154094e021dc"  } }
+{ "fetchPurchases": {    "cost": 2792.91,    "category": "DIY",    "country": "Australia",    "reference": "497f8dbc-d046-42fb-9be2-eda0316a7779"  } }
+{ "fetchPurchases": {    "cost": 694.2,    "category": "Travel",    "country": "India",    "reference": "f1744d00-4577-4fee-bd5f-ef46e0fc5ce8"  } }
+{ "fetchPurchases": {    "cost": 3047.84,    "category": "Electronics",    "country": "China",    "reference": "b8ece68a-7cf6-42c4-9e66-cad1c44d0239"  } }
+{ "fetchPurchases": {    "cost": 1000.83,    "category": "Toys",    "country": "United Kingdom",    "reference": "4c775629-fa31-48ed-949f-d2360267a727"  } }
+{ "fetchPurchases": {    "cost": 3989.31,    "category": "Travel",    "country": "United Kingdom",    "reference": "b5fed793-d51f-4fe8-8994-bde09451d963"  } }
+{ "fetchPurchases": {    "cost": 2789.41,    "category": "Clothing",    "country": "Australia",    "reference": "527c1bf3-4fd9-4598-a620-eaee26012619"  } }
+{ "fetchPurchases": {    "cost": 2097.94,    "category": "Electronics",    "country": "India",    "reference": "dda12827-1015-4646-b3ad-2ef131b26d51"  } }
+{ "fetchPurchases": {    "cost": 844.69,    "category": "Electronics",    "country": "China",    "reference": "ee110d37-3e99-4e00-a676-1bfd37d52ac4"  } }
+{ "fetchPurchases": {    "cost": 3072.14,    "category": "Furniture",    "country": "South Africa",    "reference": "d2c24d1c-5e4c-4f98-b26d-b2c989796c6f"  } }
+{ "fetchPurchases": {    "cost": 2854.3,    "category": "Personal Care",    "country": "South Africa",    "reference": "e6a40899-ad40-4ba4-9f67-a1032d0fcc1e"  } }
+{ "fetchPurchases": {    "cost": 3385.3,    "category": "Media",    "country": "Colombia",    "reference": "6528b80c-ae64-4af0-8de3-beb71fd16657"  } }
+{ "fetchPurchases": {    "cost": 693.91,    "category": "Furniture",    "country": "Colombia",    "reference": "c9dae282-f4f8-4afc-bbb2-cab81a747ba9"  } }
+{ "fetchPurchases": {    "cost": 605.11,    "category": "Travel",    "country": "Colombia",    "reference": "1f01442a-7c65-466e-ba0c-c99a88ab3d3e"  } }
+{ "fetchPurchases": {    "cost": 633.55,    "category": "Outdoor",    "country": "China",    "reference": "9627f6a8-dfb7-451b-a141-e3e4ce352c24"  } }
+{ "fetchPurchases": {    "cost": 562.45,    "category": "Food",    "country": "Australia",    "reference": "ab098249-fc41-42cf-a46e-b1775dedb261"  } }
+{ "fetchPurchases": {    "cost": 2106.14,    "category": "Furniture",    "country": "Denmark",    "reference": "a2f9d93f-2ade-47e0-b5d3-a69d02f4e490"  } }
+{ "fetchPurchases": {    "cost": 584.91,    "category": "Food",    "country": "Japan",    "reference": "09ef71b3-cccf-4d24-8213-04b9a73ab863"  } }
+{ "fetchPurchases": {    "cost": 2110.67,    "category": "DIY",    "country": "Denmark",    "reference": "621a5f9f-e49f-4ea2-bd9e-d5d7c3bd4827"  } }
+{ "fetchPurchases": {    "cost": 2328.37,    "category": "Personal Care",    "country": "India",    "reference": "7aabb0fd-6994-49cb-9d47-3e6cafb15914"  } }

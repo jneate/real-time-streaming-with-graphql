@@ -4,7 +4,7 @@ import ArrayDataProvider = require("ojs/ojarraydataprovider");
 import {ColorAttributeGroupHandler} from "ojs/ojattributegrouphandler";
 import "ojs/ojchart";
 
-import { Client, createClient, ExecutionResult, SubscribePayload } from 'graphql-ws';
+import { Client, createClient, SubscribePayload } from 'graphql-ws';
 import { Country, CountrySubscription } from "../models";
 
 class DashboardViewModel {
@@ -13,6 +13,7 @@ class DashboardViewModel {
   dataProvider: ArrayDataProvider<string, Country>;
   handler: ColorAttributeGroupHandler;
   client: Client;
+  subscription: AsyncGenerator<CountrySubscription, any, unknown>;
 
   constructor() {
     this.allCountries = ko.observableArray([]);
@@ -36,20 +37,14 @@ class DashboardViewModel {
   connected(): void {
     AccUtils.announce("Dashboard page loaded.");
     document.title = "Dashboard";
-    // implement further logic if needed
-    // this.allCountries.push({
-    //   countryName: "test",
-    //   population: 123,
-    //   cca3: "GBR"
-    // });
 
     (async () => {
-      const subscription: AsyncGenerator<CountrySubscription, any, unknown> = this.subscribe({
+      this.subscription = this.subscribe({
         query: 'subscription { fetchCountries { countryName population cca3 } }',
       });
       // subscription.return() to dispose
     
-      for await (const result of subscription) {
+      for await (const result of this.subscription) {
         // next = result = { data: { greetings: 5x } }
         console.log(result.fetchCountries.cca3);
         this.allCountries.push(result.fetchCountries);
@@ -63,7 +58,7 @@ class DashboardViewModel {
    * Optional ViewModel method invoked after the View is disconnected from the DOM.
    */
   disconnected(): void {
-    // implement if needed
+    this.subscription.return("");
   }
 
   /**
