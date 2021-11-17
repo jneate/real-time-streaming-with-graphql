@@ -19,8 +19,8 @@
         <oj-diagram-node
           label='[[node.data.label]]'
           short-desc='[[node.data.title]]'
-          icon.color='[[colorHandler.getValue(node.data.category)]]'
-          icon.border-color='[[colorHandler.getValue(node.data.category)]]'
+          icon.color='[[colorHandler.getValue(node.data.colourAttribute)]]'
+          icon.border-color='[[colorHandler.getValue(node.data.colourAttribute)]]'
           icon.height='[[node.data.details.length * 5 || 1]]'>
         </oj-diagram-node>
       </template>
@@ -29,7 +29,7 @@
           start-node='[[link.data.start]]' 
           end-node='[[link.data.end]]'
           short-desc='[[link.data.title]]'
-          color='[[colorHandler.getValue(link.data.category)]]'
+          color='[[colorHandler.getValue(link.data.colourAttribute)]]'
           width='[[link.data.details.length * 5]]'>
         </oj-diagram-link>
       </template>

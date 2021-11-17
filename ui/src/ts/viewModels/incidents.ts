@@ -6,6 +6,7 @@ import "ojs/ojknockout";
 import "ojs/ojdiagram";
 import "ojs/ojformlayout";
 import layout = require("../demoSankeyLayout");
+import { ojDiagram } from "ojs/ojdiagram";
 
 import { Client, createClient, SubscribePayload } from 'graphql-ws';
 import { CountrySubscription, PurchaseSubscription } from "../models";
@@ -134,7 +135,8 @@ class IncidentsViewModel {
       label: key,
       title: title,
       details: details,
-      isSink: isSink
+      isSink: isSink,
+      colourAttribute: isSink ? 'node' : key
     };
   };
 
@@ -147,7 +149,8 @@ class IncidentsViewModel {
       title: title,
       start: endpoints[0].replace(/\s+/g, ""),
       end: endpoints[1].replace(/\s+/g, ""),
-      details: details
+      details: details,
+      colourAttribute: endpoints[0]
     };
   };
 

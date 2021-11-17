@@ -18,7 +18,7 @@
           </oj-chart-group>
         </template>
         <template slot="seriesTemplate">
-          <oj-chart-series color="[[getCountryColour($current.cca3)]]">
+          <oj-chart-series color="[[colorHandler.getValue($current.items[0].data.countryName)]]">
           </oj-chart-series>
         </template>
         <template slot="itemTemplate">

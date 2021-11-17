@@ -10,17 +10,19 @@ import { Country, CountrySubscription } from "../models";
 class DashboardViewModel {
 
   allCountries: ko.ObservableArray;
+  seenCountries: Map<string, Country>;
   dataProvider: ArrayDataProvider<string, Country>;
-  handler: ColorAttributeGroupHandler;
+  colorHandler: ColorAttributeGroupHandler;
   client: Client;
   subscription: AsyncGenerator<CountrySubscription, any, unknown>;
 
   constructor() {
     this.allCountries = ko.observableArray([]);
+    this.seenCountries = new Map();
     this.dataProvider = new ArrayDataProvider(this.allCountries, {
       'keyAttributes': 'cca3'
     });
-    this.handler = new ColorAttributeGroupHandler();
+    this.colorHandler = new ColorAttributeGroupHandler()
     this.client = createClient({
       url: 'ws://localhost:4000/graphql'
     });
@@ -42,14 +44,14 @@ class DashboardViewModel {
       this.subscription = this.subscribe({
         query: 'subscription { fetchCountries { countryName population cca3 } }',
       });
-      // subscription.return() to dispose
-    
+
       for await (const result of this.subscription) {
-        // next = result = { data: { greetings: 5x } }
-        console.log(result.fetchCountries.cca3);
-        this.allCountries.push(result.fetchCountries);
+        const country = result.fetchCountries;
+        if (!this.seenCountries.has(country.countryName)) {
+          this.seenCountries.set(country.countryName, country);
+          this.allCountries.push(country);
+        }
       }
-      // complete
     })();
 
   }
@@ -67,10 +69,6 @@ class DashboardViewModel {
    */
   transitionCompleted(): void {
     // implement if needed
-  }
-
-  getCountryColour(countryCode: string): string {
-    return this.handler.getValue(countryCode);
   }
 
   subscribe<T>(payload: SubscribePayload): AsyncGenerator<T> {
