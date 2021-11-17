@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "An Oracle JavaScript Extension Toolkit(JET) web app",
   "dependencies": {
-    "@oracle/oraclejet": "~11.1.0"
+    "@oracle/oraclejet": "~11.1.0",
+    "graphql-ws": "5.5.5",
+    "graphql": "15.7.2"
   },
   "devDependencies": {
     "@oracle/oraclejet-tooling": "11.1.0",

@@ -8,10 +8,26 @@
       "css": "https://static.oracle.com/cdn/jet/11.1.0/default/css",
       "config": "bundles-config.js"
     },
-    "3rdparty": "https://static.oracle.com/cdn/jet/11.1.0/3rdparty"
+    "3rdparty": "https://static.oracle.com/cdn/jet/11.1.0/3rdparty",
+    "unpkg": "https://unpkg.com"
   },
 
   "libs": {
+
+    "graphql-ws": {
+      "cdn": "unpkg",
+      "cwd": "node_modules/graphql-ws",
+      "debug": {
+        "src": "graphql-ws.js",
+        "path": "libs/graphql-ws/umd/graphql-ws.js",
+        "cdnPath": "graphql-ws/umd/graphql-ws"
+      },
+      "release": {
+        "src": "graphql-ws.min.js",
+        "path": "libs/graphql-ws/umd/graphql-ws.min.js",
+        "cdnPath": "graphql-ws/umd/graphql-ws.min"
+      }
+    },
 
     "knockout": {
       "cdn": "3rdparty",

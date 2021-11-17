@@ -6,6 +6,26 @@
 <div class="oj-hybrid-padding">
   <h1>Dashboard Content Area</h1>
   <div>
-      To change the content of this section, you will make edits to the dashboard.html file located in the /ts/views folder.
+      <oj-chart id="ojchartBar"
+      data="[[dataProvider]]"
+      type="bar"
+      orientation="vertical"
+      hover-behavior="dim"
+      animation-on-display="auto"
+      animation-on-data-change="auto">
+        <template slot="groupTemplate">
+          <oj-chart-group label-style="[[$current.depth == 1 ? {'fontWeight':'bold'} : {'fontStyle':'italic'}]]">
+          </oj-chart-group>
+        </template>
+        <template slot="seriesTemplate">
+          <oj-chart-series color="[[getCountryColour($current.cca3)]]">
+          </oj-chart-series>
+        </template>
+        <template slot="itemTemplate">
+          <oj-chart-item value="[[$current.data.population]]" series-id="[[$current.data.cca3]]"
+            group-id="[[ ['Country Population', $current.data.countryName] ]]">
+          </oj-chart-item>
+        </template>
+      </oj-chart>
   </div>
 </div>

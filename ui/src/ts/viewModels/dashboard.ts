@@ -1,8 +1,28 @@
 import * as AccUtils from "../accUtils";
+import * as ko from "knockout";
+import ArrayDataProvider = require("ojs/ojarraydataprovider");
+import {ColorAttributeGroupHandler} from "ojs/ojattributegrouphandler";
+import "ojs/ojchart";
+
+import { Client, createClient, ExecutionResult, SubscribePayload } from 'graphql-ws';
+import { Country, CountrySubscription } from "../models";
+
 class DashboardViewModel {
 
-  constructor() {
+  allCountries: ko.ObservableArray;
+  dataProvider: ArrayDataProvider<string, Country>;
+  handler: ColorAttributeGroupHandler;
+  client: Client;
 
+  constructor() {
+    this.allCountries = ko.observableArray([]);
+    this.dataProvider = new ArrayDataProvider(this.allCountries, {
+      'keyAttributes': 'cca3'
+    });
+    this.handler = new ColorAttributeGroupHandler();
+    this.client = createClient({
+      url: 'ws://localhost:4000/graphql'
+    });
   }
 
   /**
@@ -17,6 +37,26 @@ class DashboardViewModel {
     AccUtils.announce("Dashboard page loaded.");
     document.title = "Dashboard";
     // implement further logic if needed
+    // this.allCountries.push({
+    //   countryName: "test",
+    //   population: 123,
+    //   cca3: "GBR"
+    // });
+
+    (async () => {
+      const subscription: AsyncGenerator<CountrySubscription, any, unknown> = this.subscribe({
+        query: 'subscription { fetchCountries { countryName population cca3 } }',
+      });
+      // subscription.return() to dispose
+    
+      for await (const result of subscription) {
+        // next = result = { data: { greetings: 5x } }
+        console.log(result.fetchCountries.cca3);
+        this.allCountries.push(result.fetchCountries);
+      }
+      // complete
+    })();
+
   }
 
   /**
@@ -33,6 +73,57 @@ class DashboardViewModel {
   transitionCompleted(): void {
     // implement if needed
   }
+
+  getCountryColour(countryCode: string): string {
+    return this.handler.getValue(countryCode);
+  }
+
+  subscribe<T>(payload: SubscribePayload): AsyncGenerator<T> {
+    let deferred: {
+      resolve: (done: boolean) => void;
+      reject: (err: unknown) => void;
+    } | null = null;
+    const pending: Array<T> = [];
+    let throwMe: unknown = null,
+      done = false;
+    const dispose = this.client.subscribe<T>(payload, {
+      next: (data) => {
+        pending.push(data.data);
+        deferred?.resolve(false);
+      },
+      error: (err) => {
+        throwMe = err;
+        deferred?.reject(throwMe);
+      },
+      complete: () => {
+        done = true;
+        deferred?.resolve(true);
+      },
+    });
+    return {
+      [Symbol.asyncIterator]() {
+        return this;
+      },
+      async next() {
+        if (done) return { done: true, value: undefined };
+        if (throwMe) throw throwMe;
+        if (pending.length) return { value: pending.shift()! };
+        return (await new Promise<boolean>(
+          (resolve, reject) => (deferred = { resolve, reject }),
+        ))
+          ? { done: true, value: undefined }
+          : { value: pending.shift()! };
+      },
+      async throw(err) {
+        throw err;
+      },
+      async return() {
+        dispose();
+        return { done: true, value: undefined };
+      },
+    };
+  }
+
 }
 
 export = DashboardViewModel;

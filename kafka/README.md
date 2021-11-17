@@ -34,7 +34,7 @@ services:
 You can use docker compose to bring up the Kafka and Zookeeper containers
 
 ```sh
-docker-compose up
+docker-compose up -d
 ```
 
 ## Useful Commands
@@ -58,5 +58,16 @@ kafka-console-producer.sh --topic country-topic --bootstrap-server localhost:909
 ```
 
 ```json
-{ "fetchCountries": { "countryName": "test", "population": 123, "cca3": "ABC" } }
+{ "fetchCountries": { "countryName": "test", "population": 1123, "cca3": "ABC1" } }
+```
+
+Run a series of 50 "Country Events" into Kafka (Any record can be selected, including the same row twice) at a rate of 1 per second
+
+```sh
+kafka-producer-perf-test.sh \
+--topic country-topic \
+--throughput 1 \
+--num-records 50 \
+--payload-file /tmp/all_countries.data \
+--producer-props acks=all bootstrap.servers=localhost:9092
 ```

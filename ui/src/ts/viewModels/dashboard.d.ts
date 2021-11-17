@@ -1,4 +1,15 @@
+/// <reference types="ojarraydataprovider" />
+import * as ko from "knockout";
+import ArrayDataProvider = require("ojs/ojarraydataprovider");
+import { ColorAttributeGroupHandler } from "ojs/ojattributegrouphandler";
+import "ojs/ojchart";
+import { Client, SubscribePayload } from 'graphql-ws';
+import { Country } from "../models";
 declare class DashboardViewModel {
+    allCountries: ko.ObservableArray;
+    dataProvider: ArrayDataProvider<string, Country>;
+    handler: ColorAttributeGroupHandler;
+    client: Client;
     constructor();
     /**
      * Optional ViewModel method invoked after the View is inserted into the
@@ -18,5 +29,7 @@ declare class DashboardViewModel {
      * That includes any possible animation between the old and the new View.
      */
     transitionCompleted(): void;
+    getCountryColour(countryCode: string): string;
+    subscribe<T>(payload: SubscribePayload): AsyncGenerator<T>;
 }
 export = DashboardViewModel;
