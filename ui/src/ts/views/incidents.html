@@ -6,6 +6,33 @@
 <div class="oj-hybrid-padding">
   <h1>Incidents Content Area</h1>
   <div>
-      To change the content of this section, you will make edits to the incidents.html file located in the /ts/views folder.
+    <oj-diagram id='diagram'
+      node-data = '[[nodeDataProvider]]'
+      link-data = '[[linkDataProvider]]'
+      hover-behavior = 'dim'
+      layout = '[[layoutFunc]]'
+      link-highlight-mode = 'linkAndNodes'
+      node-highlight-mode = 'nodeAndLinks'
+      selection-mode = 'none'
+      style-defaults = '[[styleDefaults]]'>
+      <template slot='nodeTemplate' data-oj-as='node'>
+        <oj-diagram-node
+          label='[[node.data.label]]'
+          short-desc='[[node.data.title]]'
+          icon.color='[[colorHandler.getValue(node.data.category)]]'
+          icon.border-color='[[colorHandler.getValue(node.data.category)]]'
+          icon.height='[[node.data.details.length * 5 || 1]]'>
+        </oj-diagram-node>
+      </template>
+      <template slot='linkTemplate' data-oj-as='link'>
+        <oj-diagram-link
+          start-node='[[link.data.start]]' 
+          end-node='[[link.data.end]]'
+          short-desc='[[link.data.title]]'
+          color='[[colorHandler.getValue(link.data.category)]]'
+          width='[[link.data.details.length * 5]]'>
+        </oj-diagram-link>
+      </template>
+    </oj-diagram>
   </div>
 </div>

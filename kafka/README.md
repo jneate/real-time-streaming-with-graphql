@@ -90,7 +90,11 @@ kafka-producer-perf-test.sh \
 ```
 
 ```sh
-kafka-producer-perf-test.sh --topic purchase-topic --throughput 1 --num-records 30 --payload-file /tmp/all_purchases.data --producer-props acks=all bootstrap.servers=localhost:9092
+kafka-producer-perf-test.sh --topic country-topic --throughput 3 --num-records 25 --payload-file /tmp/subset_countries.data --producer-props acks=all bootstrap.servers=localhost:9092
+```
+
+```sh
+kafka-producer-perf-test.sh --topic purchase-topic --throughput 3 --num-records 35 --payload-file /tmp/all_purchases.data --producer-props acks=all bootstrap.servers=localhost:9092
 ```
 
 ## Generating the Data

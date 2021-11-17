@@ -1,0 +1,15 @@
+{ "fetchCountries": { "countryName": "Brazil","population": 212559409,"cca3": "BRA"} }
+{ "fetchCountries": { "countryName": "Japan","population": 125836021,"cca3": "JPN"} }
+{ "fetchCountries": { "countryName": "United Kingdom","population": 67215293,"cca3": "GBR"} }
+{ "fetchCountries": { "countryName": "United States","population": 329484123,"cca3": "USA"} }
+{ "fetchCountries": { "countryName": "South Africa","population": 59308690,"cca3": "ZAF"} }
+{ "fetchCountries": { "countryName": "India","population": 1380004385,"cca3": "IND"} }
+{ "fetchCountries": { "countryName": "China","population": 1402112000,"cca3": "CHN"} }
+{ "fetchCountries": { "countryName": "Denmark","population": 5831404,"cca3": "DNK"} }
+{ "fetchCountries": { "countryName": "Colombia","population": 50882884,"cca3": "COL"} }
+{ "fetchCountries": { "countryName": "Australia","population": 25687041,"cca3": "AUS"} }
+{ "fetchCountries": { "countryName": "Kazakhstan","population": 18754440,"cca3": "KAZ"} }
+{ "fetchCountries": { "countryName": "United Arab Emirates","population": 9890400,"cca3": "ARE"} }
+{ "fetchCountries": { "countryName": "Spain","population": 47351567,"cca3": "ESP"} }
+{ "fetchCountries": { "countryName": "Russia","population": 144104080,"cca3": "RUS"} }
+{ "fetchCountries": { "countryName": "Singapore","population": 5685807,"cca3": "SGP"} }
