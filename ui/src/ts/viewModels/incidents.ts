@@ -4,25 +4,35 @@ import ArrayDataProvider = require("ojs/ojarraydataprovider");
 import {ColorAttributeGroupHandler} from "ojs/ojattributegrouphandler";
 import "ojs/ojknockout";
 import "ojs/ojdiagram";
+import "ojs/ojpictochart";
+import "ojs/ojlegend";
 import "ojs/ojformlayout";
 import layout = require("../demoSankeyLayout");
 import { ojDiagram } from "ojs/ojdiagram";
 
 import { Client, createClient, SubscribePayload } from 'graphql-ws';
-import { CountrySubscription, PurchaseSubscription } from "../models";
+import { CountrySubscription, Purchase, PurchaseSubscription } from "../models";
 
 class IncidentsViewModel {
 
-  client: Client;
-  countrySubscription: AsyncGenerator<CountrySubscription, any, unknown>;
-  purchaseSubscription: AsyncGenerator<PurchaseSubscription, any, unknown>;
-  linkIndex = 0;
+  categoriesDataProvider: ArrayDataProvider<ko.ObservableArray, { keyAttributes: string }>;
+  countriesDataProvider: ArrayDataProvider<ko.ObservableArray, { keyAttributes: string }>;
+  nodeDataProvider: ArrayDataProvider<ko.ObservableArray, { keyAttributes: string }>;
+  linkDataProvider: ArrayDataProvider<ko.ObservableArray, { keyAttributes: string }>;
   
+  private countrySubscription: AsyncGenerator<CountrySubscription, any, unknown>;
+  private purchaseSubscription: AsyncGenerator<PurchaseSubscription, any, unknown>;
+  private linkIndex = 0;
+
+  private readonly client: Client;
+  private readonly categories = ko.observableArray([]);
+  private readonly countriesArray = ko.observableArray([]);
   private readonly nodes = ko.observableArray([]);
   private readonly links = ko.observableArray([]);
   private readonly countries = new Map<string, number>();
   private readonly purchases = new Map<string, number>();
   private readonly connections = new Map<string, number>();
+  private readonly seenPurchases = new Map<string, Purchase>();
 
   constructor() {
     this.client = createClient({
@@ -42,18 +52,29 @@ class IncidentsViewModel {
     AccUtils.announce("Incidents page loaded.");
     document.title = "Incidents";
     
+    this.categoriesDataProvider = new ArrayDataProvider(this.categories, {
+      keyAttributes: "id",
+    });
+    
+    this.countriesDataProvider = new ArrayDataProvider(this.countriesArray, {
+      keyAttributes: "id",
+    });
+    
+    this.nodeDataProvider = new ArrayDataProvider(this.nodes, {
+      keyAttributes: "id",
+    });
+  
+    this.linkDataProvider = new ArrayDataProvider(this.links, {
+      keyAttributes: "id",
+    });
+    
     (async () => {
       this.countrySubscription = this.subscribe({
         query: 'subscription { fetchCountries { countryName population cca3 } }',
       });
     
       for await (const result of this.countrySubscription) {
-        const country = result.fetchCountries.countryName;
-        if (!this.countries.has(country)) {
-          this.countries.set(country, this.nodes.push(
-            this.createNode(country, [], false)
-          ));
-        }
+        this.processCountry(result.fetchCountries.countryName);
       }
     })();
 
@@ -63,48 +84,17 @@ class IncidentsViewModel {
       });
     
       for await (const result of this.purchaseSubscription) {
-
-        console.log(result.fetchPurchases.country);
-
+        
         const purchase = result.fetchPurchases;
         const country = purchase.country;
-        
-        if (!this.countries.has(country)) {
-          this.countries.set(country, this.nodes.push(
-            this.createNode(country, [purchase], false)
-          ));
-        } else {
-          const index = this.countries.get(country) - 1;
-          const node = this.nodes()[index];
-          node.details = node.details.concat([purchase]);
-          node.title = `${country}: ${node.details.length} ${node.details.length === 1 ? 'purchase' : 'purchases'}`;
-        }
-          
         const category = purchase.category;
-
-        if (!this.purchases.has(category)) {
-          this.purchases.set(category, this.nodes.push(
-            this.createNode(category, [purchase], true)
-          ));
-        } else {
-          const index = this.purchases.get(category) - 1;
-          const node = this.nodes()[index];
-          node.details = node.details.concat([purchase]);
-          node.title = `${category}: ${node.details.length} ${node.details.length === 1 ? 'purchase' : 'purchases'}`;
-        }
-
         const connectionKey = `${country}:${category}`;
 
-        if (!this.connections.has(connectionKey)) {
-          this.connections.set(connectionKey, this.links.push(
-            this.createLink(this.linkIndex++, connectionKey, [purchase])
-          ));
-        } else {
-          const index = this.connections.get(connectionKey) - 1;
-          const link = this.links()[index];
-          link.details = link.details.concat([purchase]);
-          const endpoints = connectionKey.split(":");
-          link.title = `${endpoints[1]} bought ${link.details.length} ${link.details.length === 1 ? 'time' : 'times'} from ${endpoints[0]}`;
+        if (!this.seenPurchases.has(purchase.reference)) {
+          this.seenPurchases.set(purchase.reference, purchase);
+          this.processCountry(purchase.country, purchase);
+          this.processPurchase(purchase.category, purchase);
+          this.processConnection(connectionKey, purchase);
         }
 
       }
@@ -128,6 +118,57 @@ class IncidentsViewModel {
     // implement if needed
   }
 
+  processCountry(key: string, purchase?: Purchase): void {
+
+    if (!this.countries.has(key)) {
+      const node = this.createNode(key, purchase ? [purchase] : [], false);
+      this.countries.set(key, this.nodes.push(node));
+      this.countriesArray.push(node);
+    } else if (purchase) {
+      const index = this.countries.get(key) - 1;
+      const node = this.nodes()[index];
+      node.details = node.details.concat([purchase]);
+      node.title = `${key}: ${node.details.length} ${node.details.length === 1 ? 'purchase' : 'purchases'}`;
+      this.nodes.valueHasMutated();
+      this.countriesArray.valueHasMutated();
+    }
+
+  }
+
+  processPurchase(key: string, purchase: Purchase): void {
+    
+    if (!this.purchases.has(key)) {
+      const node = this.createNode(key, [purchase], true);
+      this.purchases.set(key, this.nodes.push(node));
+      this.categories.push(node);
+    } else {
+      const index = this.purchases.get(key) - 1;
+      const node = this.nodes()[index];
+      node.details = node.details.concat([purchase]);
+      node.title = `${key}: ${node.details.length} ${node.details.length === 1 ? 'purchase' : 'purchases'}`;
+      this.nodes.valueHasMutated();
+      this.categories.valueHasMutated();
+    }
+
+  }
+
+  processConnection(key: string, purchase: Purchase): void {
+
+    if (!this.connections.has(key)) {
+      this.connections.set(key, this.links.push(
+        this.createLink(this.linkIndex++, key, [purchase])
+      ));
+    } else {
+      const index = this.connections.get(key) - 1;
+      const link = this.links()[index];
+      link.details = link.details.concat([purchase]);
+      const endpoints = key.split(":");
+      link.title = `${endpoints[1]} bought ${link.details.length} ${link.details.length === 1 ? 'time' : 'times'} from ${endpoints[0]}`;
+      this.links.valueHasMutated();
+    }
+
+  }
+
   createNode = (key: string, details: unknown[], isSink: boolean) => {
     const title = `${key}: ${details.length} ${details.length === 1 ? 'purchase' : 'purchases'}`;
     return {
@@ -136,12 +177,11 @@ class IncidentsViewModel {
       title: title,
       details: details,
       isSink: isSink,
-      colourAttribute: isSink ? 'node' : key
+      colourAttribute: key
     };
   };
 
   createLink = (index: number, connection: string, details: unknown[]) => {
-    console.log(index);
     const endpoints = connection.split(":");
     const title = `${endpoints[1]} bought ${details.length} ${details.length === 1 ? 'time' : 'times'} from ${endpoints[0]}`;
     return {
@@ -154,16 +194,26 @@ class IncidentsViewModel {
     };
   };
 
-  readonly colorHandler = new ColorAttributeGroupHandler();
+  totalCost(purchases: Purchase[]): number {
+    return purchases.reduce(function(previousValue, currentValue) {
+      return previousValue + currentValue.cost
+    }, 0);
+  }
+
+  // Hard coding the category colours to ensure they stand out from the countries
+  readonly colorHandler = new ColorAttributeGroupHandler({
+    'Personal Care': '#418CF0',
+    'Furniture': '#DF3A02',
+    'Outdoor': '#919191',
+    'Electronics': '#1A3B69',
+    'Toys': '#CD853F',
+    'Clothing': '#2E8B57',
+    'Media': '#F1B9A8',
+    'Food': '#7893BE',
+    'DIY': '#DDA0DD',
+    'Travel': '#9ACD32'
+  });
   readonly layoutFunc = layout.layout;
-
-  readonly nodeDataProvider = new ArrayDataProvider(this.nodes, {
-    keyAttributes: "id",
-  });
-
-  readonly linkDataProvider = new ArrayDataProvider(this.links, {
-    keyAttributes: "id",
-  });
 
   readonly styleDefaults = {
     nodeDefaults: {

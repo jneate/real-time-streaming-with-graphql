@@ -35,4 +35,42 @@
       </template>
     </oj-diagram>
   </div>
+  <!-- <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-picto-chart id='pictochart1'
+        column-count="10"
+        data="[[countriesDataProvider]]"
+        animation-on-data-change="auto">
+        <template slot="itemTemplate" data-oj-as="item">
+          <oj-picto-chart-item name="[[item.data.label]]" short-desc="[[item.data.title]]" shape="rectangle" color="[[colorHandler.getValue(item.data.label)]]" count="[[item.data.details.length]]"></oj-picto-chart-item>
+        </template>
+      </oj-picto-chart>
+      <div class="oj-typography-bold">Countries</div>
+      <oj-legend id="legend1"
+        orientation="horizontal"
+        data="[[countriesDataProvider]]">
+        <template slot="itemTemplate" data-oj-as="item">
+          <oj-legend-item text="[[item.data.label]]" marker-shape="square" color="[[colorHandler.getValue(item.data.label)]]"></oj-legend-item>
+        </template>
+      </oj-legend>
+    </div>
+    <div class="oj-flex-item">
+      <oj-picto-chart id='pictochart2'
+        column-count="10"
+        data="[[categoriesDataProvider]]"
+        animation-on-data-change="auto">
+        <template slot="itemTemplate" data-oj-as="item">
+          <oj-picto-chart-item name="[[item.data.label]]" short-desc="[[item.data.title]]" shape="rectangle" color="[[colorHandler.getValue(item.data.label)]]" count="[[item.data.details.length]]"></oj-picto-chart-item>
+        </template>
+      </oj-picto-chart>
+      <div class="oj-typography-bold">Categories</div>
+      <oj-legend id="legend2"
+        orientation="horizontal"
+        data="[[categoriesDataProvider]]">
+        <template slot="itemTemplate" data-oj-as="item">
+          <oj-legend-item text="[[item.data.label]]" marker-shape="square" color="[[colorHandler.getValue(item.data.label)]]"></oj-legend-item>
+        </template>
+      </oj-legend>
+    </div>
+  </div> -->
 </div>
