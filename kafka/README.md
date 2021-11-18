@@ -37,7 +37,7 @@ You can use docker compose to bring up the Kafka and Zookeeper containers
 docker-compose up -d
 ```
 
-## Useful Commands
+## Setup
 
 After creating a new interactive shell session on the broker, you can execute the following commands.
 
@@ -45,7 +45,7 @@ After creating a new interactive shell session on the broker, you can execute th
 docker exec -it broker sh
 ```
 
-Create a new topic
+Create the topics
 
 ```sh
 kafka-topics.sh --bootstrap-server broker:9092 --create --topic country-topic --partitions 1 --replication-factor 1
@@ -55,7 +55,21 @@ kafka-topics.sh --bootstrap-server broker:9092 --create --topic country-topic --
 kafka-topics.sh --bootstrap-server broker:9092 --create --topic purchase-topic --partitions 1 --replication-factor 1
 ```
 
-Produce a GraphQL Event to the Broker
+Populate the Country Topic
+
+```sh
+kafka-producer-perf-test.sh --topic country-topic --throughput 3 --num-records 25 --payload-file /tmp/subset_countries.data --producer-props acks=all bootstrap.servers=localhost:9092
+```
+
+Populate the Purchase Topic
+
+```sh
+kafka-producer-perf-test.sh --topic purchase-topic --throughput 3 --num-records 70 --payload-file /tmp/all_purchases.data --producer-props acks=all bootstrap.servers=localhost:9092
+```
+
+## Debugging Commands
+
+Produce a Country Event to the Broker
 
 ```sh
 kafka-console-producer.sh --topic country-topic --bootstrap-server localhost:9092
@@ -65,43 +79,23 @@ kafka-console-producer.sh --topic country-topic --bootstrap-server localhost:909
 { "fetchCountries": { "countryName": "test", "population": 1123, "cca3": "ABC1" } }
 ```
 
-Run a series of 50 "Country Events" into Kafka (Any record can be selected, including the same row twice) at a rate of 1 per second
+Produce a Purchase Event to the Broker
 
 ```sh
-kafka-producer-perf-test.sh \
---topic country-topic \
---throughput 1 \
---num-records 30 \
---payload-file /tmp/all_countries.data \
---producer-props acks=all bootstrap.servers=localhost:9092
+kafka-console-producer.sh --topic purchase-topic --bootstrap-server localhost:9092
 ```
 
-```sh
-kafka-producer-perf-test.sh --topic country-topic --throughput 1 --num-records 30 --payload-file /tmp/all_countries.data --producer-props acks=all bootstrap.servers=localhost:9092
-```
-
-```sh
-kafka-producer-perf-test.sh \
---topic purchase-topic \
---throughput 1 \
---num-records 30 \
---payload-file /tmp/all_purchases.data \
---producer-props acks=all bootstrap.servers=localhost:9092
-```
-
-```sh
-kafka-producer-perf-test.sh --topic country-topic --throughput 3 --num-records 25 --payload-file /tmp/subset_countries.data --producer-props acks=all bootstrap.servers=localhost:9092
-```
-
-```sh
-kafka-producer-perf-test.sh --topic purchase-topic --throughput 3 --num-records 35 --payload-file /tmp/all_purchases.data --producer-props acks=all bootstrap.servers=localhost:9092
+```json
+{ "fetchPurchases": { "cost": 112.34, "category": "ABCDEF", "country": "test", "reference": "ABC123" } }
 ```
 
 ## Generating the Data
 
-Visit [https://www.json-generator.com/](https://www.json-generator.com/)
+For the country data, you can use [RestCountries](https://restcountries.com/)
 
-For the purchases you can use the following code
+For the purchase data you can visit the following website and paste the snippet below
+
+Visit [https://www.json-generator.com/](https://www.json-generator.com/)
 
 ```text
 [
