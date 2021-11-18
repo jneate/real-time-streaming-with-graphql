@@ -198,7 +198,7 @@ class IncidentsViewModel {
     return purchases.reduce(function(previousValue, currentValue) {
       return previousValue + currentValue.cost
     }, 0);
-  };
+  }
 
   // Hard coding the category colours to ensure they stand out from the countries
   readonly colorHandler = new ColorAttributeGroupHandler({
