@@ -22,7 +22,7 @@ class DashboardViewModel {
     this.dataProvider = new ArrayDataProvider(this.allCountries, {
       'keyAttributes': 'cca3'
     });
-    this.colorHandler = new ColorAttributeGroupHandler()
+    this.colorHandler = new ColorAttributeGroupHandler();
     this.client = createClient({
       url: 'ws://localhost:4000/graphql'
     });
